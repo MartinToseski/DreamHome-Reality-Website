@@ -1209,3 +1209,26 @@ textarea {
     display: none;
   }
 }
+
+@media (orientation: landscape) and (max-height: 450px) and (max-width: 786px) {
+  #main-header .header-content p {
+    display: none;
+  }
+
+  #main-header .header-content h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  #main-header .header-content a {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.6rem;
+  }
+}
+
+@media (max-height: 500px) and (max-width: 500px) {
+  #main-header .header-content p,
+  #main-header .header-content a {
+    display: none;
+  }
+}
