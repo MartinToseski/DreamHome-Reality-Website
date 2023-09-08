@@ -1193,6 +1193,10 @@ textarea {
     gap: 4rem;
   }
 
+  #listings-offers {
+    padding: 5rem 3rem;
+  }
+
   #listings-offers h3 {
     font-size: 2rem;
   }
