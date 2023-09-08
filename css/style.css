@@ -48,6 +48,7 @@ textarea {
   font-size: 1.2rem;
   border-radius: 10px;
   padding: 1rem 2rem;
+  text-align: center;
 }
 
 .btn:hover {
@@ -1065,12 +1066,18 @@ textarea {
     border: none;
   }
 
+  #main-header .header-content {
+    padding: 0.5rem 2rem;
+  }
+
   #main-header .header-content h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #main-header .header-content p {
     font-size: 0.8rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 
   #main-header .header-content a {
@@ -1117,6 +1124,10 @@ textarea {
     font-size: 1rem;
   }
 
+  #main-info .info-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
   #main-info .info-content .info-contact h3 {
     font-size: 2.5rem;
   }
@@ -1142,6 +1153,30 @@ textarea {
     height: 200px;
   }
 
+  #about-history .history-content h2 {
+    font-size: 2rem;
+  }
+
+  #about-history .history-content p {
+    font-size: 0.9rem;
+  }
+
+  #about-history .history-content .bottom-line {
+    width: 100px;
+  }
+
+  #about-testimonials .testimonials-content h2 {
+    font-size: 2rem;
+  }
+
+  #about-testimonials .testimonials-content .bottom-line {
+    width: 100px;
+  }
+
+  #about-testimonials .testimonials-content p {
+    font-size: 0.9rem !important;
+  }
+
   #about-testimonials .testimonials .testimonials-item {
     width: 100%;
     display: flex;
@@ -1156,6 +1191,10 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+  }
+
+  #listings-offers h3 {
+    font-size: 2rem;
   }
 
   #listings-offers .listings-items .list-item {
