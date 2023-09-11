@@ -201,6 +201,7 @@ textarea {
 
 #main-gallery .gallery .gallery-img:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.3s ease-out;
 }
 
 #main-gallery .gallery .gallery-item4 {
@@ -264,6 +265,7 @@ textarea {
   height: 500px;
   border-radius: 15%;
   box-shadow: #ffdf00 -3rem 3rem;
+  transition: width 0.5s ease-out, height 0.5s ease-out;
 }
 
 #main-info .info-content #buy-img:hover {
@@ -559,6 +561,62 @@ textarea {
   border-radius: 25px;
   margin-bottom: 2rem;
   color: black;
+  position: relative;
+}
+
+#listings-offers .listings-items .list-item .item-pop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  background: #333;
+  padding: 2rem;
+  border-radius: 25px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  width: 0;
+  transition: width 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+#listings-offers .listings-items .list-item .item-content:hover .item-side {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+#listings-offers .listings-items .list-item .item-content:hover .item-pop {
+  width: 100%;
+  opacity: 0.9;
+  transition: all 0.8s ease-out;
+}
+
+#listings-offers .listings-items .list-item .item-content:hover .item-pop p {
+  color: #fff;
+  font-size: 1.2rem;
+  width: 90%;
+}
+
+#listings-offers .listings-items .list-item .item-content:hover .item-pop a {
+  border: none;
+  color: #fff;
+  background: #2070b2;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+#listings-offers
+  .listings-items
+  .list-item
+  .item-content:hover
+  .item-pop
+  a:hover {
+  background: #0161af;
+  color: #ffe2b1;
+  transition: all 0.3s ease-out;
 }
 
 #listings-offers .listings-items .list-item .item-content .item-side i {
@@ -569,8 +627,9 @@ textarea {
 }
 
 #listings-offers .listings-items .list-item:hover .item-content .item-side i {
-  transform: rotate(90deg);
-  transition: transform 0.3s;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 0.5s ease-out;
 }
 
 #listings-offers
@@ -1024,6 +1083,10 @@ textarea {
     font-size: 1.5rem;
   }
 
+  #listings-offers .listings-items .list-item .item-content .item-pop p {
+    font-size: 1rem !important;
+  }
+
   #contact-form {
     padding: 5rem 3rem;
   }
@@ -1207,6 +1270,19 @@ textarea {
 
   #listings-offers .listings-items .list-item .item-content .item-side {
     display: none;
+  }
+
+  #listings-offers .listings-items .list-item .item-content .item-pop {
+    gap: 1rem !important;
+  }
+
+  #listings-offers .listings-items .list-item .item-content .item-pop p {
+    font-size: 0.6rem !important;
+  }
+
+  #listings-offers .listings-items .list-item .item-content .item-pop a {
+    padding: 0.2rem 0.7rem !important;
+    font-size: 0.6rem !important;
   }
 }
 
